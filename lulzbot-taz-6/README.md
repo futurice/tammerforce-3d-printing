@@ -32,3 +32,17 @@ For more in depth guide refer to the official [Operations guide](http://download
 ).
 
 ## Advanced
+
+### Using custom printing profiles
+
+Cura LulzBot Edition comes with bunch of custom profiles, but you can also create your own profiles by tweaking the settings and saving the profile as .ini file. If you come up with great settings, please give the files a nice logical name and commit them under `lulzbot-taz-6/profiles/<material>/` directory for others to use! If required, provide a small README file of the profiles usage.
+
+To load a profile, load your model in Cura, change to full settings view from _Expert -> Switch to full settings_ and load the profile with _File -> Open profile_. Make sure that the settings match your printing material, and start printing!
+
+### Printing using USB cable
+
+You can also connect the Taz 6 printer to your computer using the USB type B connector behind the printer (this also worked with MacBook 2016 dongles).
+
+Load your model in Cura, and select "Control" button which should now be visible on the top left of the 3D view. You can set the temperature manually and test that filament flows out of the printer by pressing "Extrude 10" button.
+
+You can start printing by hitting Print. In this mode printing time only shown on your computer, and it seems like your computer needs to be connected to the printer until the print is complete. Don't crash your Cura during this time. :)
