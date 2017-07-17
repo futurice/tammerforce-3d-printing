@@ -3,7 +3,7 @@
 ## Quickstart
 _AKA HOW DO I PRINT WITH THIS THING??_
 
-1. Install [Cura](https://www.lulzbot.com/cura).
+1. Install [Cura](https://www.lulzbot.com/cura). Notice that this is the Lulzbot version (there are several different Cura versions)! After installing, add the Taz 6 as a new machine (Machine->Add new machine->Taz 6).
 
 2. Load your `.stl` or `.obj` model file in Cura. You can find models from [thingiverse](https://www.thingiverse.com/).
 
