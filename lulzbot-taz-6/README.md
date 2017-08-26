@@ -46,3 +46,34 @@ You can also connect the Taz 6 printer to your computer using the USB type B con
 Load your model in Cura, and select "Control" button which should now be visible on the top left of the 3D view. You can set the temperature manually and test that filament flows out of the printer by pressing "Extrude 10" button.
 
 You can start printing by hitting Print. In this mode printing time only shown on your computer, and it seems like your computer needs to be connected to the printer until the print is complete. Don't crash your Cura during this time. :)
+
+## Printing with OctoPi
+
+TODO
+
+## Debugging
+
+### PROBE FAIL CLEAN NOZZLE
+
+This seems to occur when nozzle is too unclean to reliably conduct electricity. When autoleveling sequence is running, the printer lightly touches all corners until the nozzle contacts with the corner. If the nozzle head is not clean, this will fail and the printer will attempt to rewipe the head couple of times, until failing the print.
+
+You should check Cura logs (if you are directly controlling the printer), every corner should register its coordinates:
+
+```
+Print started at 15:19:55
+< Bed x: -9.00 y: -9.00 z: 1.868750
+< Rewiping
+< Bed x: -9.00 y: -9.00 z: 2.220625
+< Bed x: 288.00 y: -9.00 z: 1.306875
+< Bed x: 288.00 y: 289.00 z: 1.298125
+< Bed x: -9.00 y: 289.00 z: 1.869375
+< Eqn coefficients: a: -0.002500 b: -0.000604 d: 2.107064
+< planeNormal x: 0.002500 y: 0.000604 z: 1.000000
+< Probing done!
+```
+
+In this run the head was dirty, and rewiping happened once.
+
+Try cleaning the head with some alcohol / rubbing the head without scratching it too badly.
+
+This could also be caused by the frame not being square enough, refer to https://forum.lulzbot.com/viewtopic.php?f=36&t=4556&sid=d84f08e8bd061a2951cbe53aa686df41 and https://ohai.lulzbot.com/project/squaring-taz-6-frame/ (step 23).
