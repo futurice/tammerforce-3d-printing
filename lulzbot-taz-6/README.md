@@ -49,7 +49,11 @@ You can start printing by hitting Print. In this mode printing time only shown o
 
 ## Printing with OctoPi
 
-TODO
+In Futurice-Tampere network (or VPN) go to http://10.6.100.198/, and enter the credentials that can be found from password safe.
+
+Upload your files (already sliced .gcode files or .stl files that will be sliced on the device) and start printing.
+
+Camera & DNS setup coming soon™
 
 ## Debugging
 
