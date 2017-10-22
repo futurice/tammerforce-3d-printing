@@ -22,6 +22,9 @@ The documentation for LulzBot TAZ 6 usage is found [here](/lulzbot-taz-6/README.
 
 ### Ultimaker Original+
 
+![Ultimaker Original +](pics/ultimakerOriginal+/Ultimaker-Original-Compare.png)
+
+
 [Manufacturers page](https://ultimaker.com/en/products/ultimaker-original)
 
 [User's manual & assembly instructions](https://ultimaker.com/en/resources/20978-umoplus-assembly)
