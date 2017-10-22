@@ -49,7 +49,7 @@ You can start printing by hitting Print. In this mode printing time only shown o
 
 ## Printing with OctoPi
 
-In Futurice-Tampere network (or VPN) go to http://10.6.100.198/, and enter the credentials that can be found from password safe. Make sure the printer is turned on and hit "Connect" from the Connection menu.
+In Futurice-Tampere network (or VPN) go to http://tre-octoprint.futurice.com/, and enter the credentials that can be found from password safe(search "Tampere Taz 6 OctoPrint"). Make sure the printer is turned on and hit "Connect" from the Connection menu.
 
 Upload your files (already sliced .gcode files or .stl files that will be sliced on the device) and start printing.
 
