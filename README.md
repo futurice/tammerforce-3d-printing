@@ -17,8 +17,14 @@ The documentation for LulzBot TAZ 6 usage is found [here](/lulzbot-taz-6/README.
 #### Printer head: TAZ 6 Single Extruder v2.1
 ![Printer head](/pics/taz6/TAZ_Standard_Tool_Head_v2C_angle.JPG)
 
-- 0.50 mm nozzle diameter
 - Compatible with non-flexible filament with an extrusion temperature under 300°C
+
+#### Printer head: TAZ 6 Dual Extruder v3
+![Printer head](/pics/taz6/TAZ_Dual_Extruder_v3.png)
+
+- 2x 0.50mm nozzle
+- Can print two kinds of materials on the same print
+- No material limitations
 
 ### Ultimaker Original+
 

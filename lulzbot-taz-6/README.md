@@ -3,57 +3,43 @@
 ## Quickstart
 _AKA HOW DO I PRINT WITH THIS THING??_
 
-1. Install [Cura](https://www.lulzbot.com/cura). Notice that this is the Lulzbot version (there are several different Cura versions)! After installing, add the Taz 6 as a new machine (Machine->Add new machine->Taz 6).
+0. If you have local access to the printer computer (at the corner of Markku), skip to step 3.
 
-2. Load your `.stl` or `.obj` model file in Cura. You can find models from [thingiverse](https://www.thingiverse.com/).
+1. Download remote desktop client (for Mac you can use [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466))
 
-3. Check which filament the machine is currently equipped with from the label of the filament roll. _Currently this is usually 2,85mm PLA._
+2. Connect to tre-iot-hub.futurice.com (works from office network and VPN)
 
-4. Select matching _Material_ from the left hand side menu. For PLA you can use e.g. _Material ease of use: Beginner - Material: PLA (Village Plastics)_, which has basic
-205 C° Printing temeprature and 60 C° Bed Temperature settings.
+3. Login to the computer. You can find login credentials from password.futurice.com with name "Tampere Simplify3D"
 
-5. Make sure your model is laying flat on the ground on the 3D view. You probably shouldn't touch scaling or rotation, unless you know what you are doing.
+4. Open Simplify3D software from dock if not already open
 
-6. Select your desired _quickprint profile_ from the left hand side menu. _Standard_ is probably good enough, unless you want to have a finer finish or faster print.
+5. Load your `.stl` or `.obj` model file in Simplify3D. You can find models from [thingiverse](https://www.thingiverse.com/).
 
-7. Determine if your piece needs supports to be printed. Pieces with overhangs often need support structures for the printing to succeed. Need of supports is also often specified in thingiverse description / comments. Enabled supports by ticking _Print support structure_.
+6. Make sure your model is laying flat on the ground on the 3D view. You probably shouldn't touch scaling or rotation, unless you know what you are doing.
 
-8. If you piece needs extra support to not fall / stick better to the surface, you can also select _Print brim_. For smaller pieces this is likely not required, but go ahead.
+7. Check which filament the machine is currently equipped with from the label of the filament roll. _Currently this is usually 2,85mm PLA._
 
-9. Make sure the estimated print time & filament usage makes sense. 3D printing is quite slow by its nature. Please make sure that someone can stay at the office until the print is finished. __NOTE:__ The estimated time is often less than actual print time.
+8. On the bottom of the left hand side menu click "Edit process settings". Select matching _Material_ from the "Auto-Configure for Material" menu.
 
-10. Export your print as `.gcode` file with some reasonable filename. Transfer this file on the printers removable SD card. If you are using a 2016 MacBook, ~~cry yourself to sleep and~~ try to find a card reader.
+9. Select your desired _print quality_ from the next menu. _Medium_ is probably good enough, unless you want to have a finer finish or faster print.
 
-11. Pop the SD card back into the printer, turn it on and select "Print from SD card" using the pushable knob on the device. Find your file, and start printing.
+10. Determine if your piece needs supports to be printed. Pieces with overhangs often need support structures for the printing to succeed. Need of supports is also often specified in thingiverse description / comments. Enabled supports by ticking _Generate support_.
 
-12. After the print is done, the part will first be cooled down. After the desired cooling temperature is reached (45 C° for PLA), the printer will move back to neutral position and the part can be removed. The knife with blue handle and mild violence can be used to separate the piece from heat bed.
+11. Click OK and create your print with "Prepare to Print" button.
 
-For more in depth guide refer to the official [Operations guide](http://download.lulzbot.com/TAZ/6.02/documentation/guide/PDFs_for_web/TAZ_6_QSG_OPERATION_WEB.pdf
-).
+12. Make sure the estimated print time & filament usage makes sense. 3D printing is quite slow by its nature. Please make sure that someone can stay at the office until the print is finished. __NOTE:__ The estimated time is often less than actual print time.
 
-## Advanced
+13. Export your print as `.gcode` file with some reasonable filename with the "Save toolpaths to Disk" button.
 
-### Using custom printing profiles
+14. Open browser and go to octoprint.iot.tre.futurice.org
 
-Cura LulzBot Edition comes with bunch of custom profiles, but you can also create your own profiles by tweaking the settings and saving the profile as .ini file. If you come up with great settings, please give the files a nice logical name and commit them under `lulzbot-taz-6/profiles/<material>/` directory for others to use! If required, provide a small README file of the profiles usage.
+15. If Octoprint indicates that it is not connected to the printer, power up the printer and press "Connect".
 
-To load a profile, load your model in Cura, change to full settings view from _Expert -> Switch to full settings_ and load the profile with _File -> Open profile_. Make sure that the settings match your printing material, and start printing!
+16. Upload the GCode to the Octoprint server with "Upload" button.
 
-### Printing using USB cable
+17. Find your file and press the printer icon to start the print.
 
-You can also connect the Taz 6 printer to your computer using the USB type B connector behind the printer (this also worked with MacBook 2016 dongles).
-
-Load your model in Cura, and select "Control" button which should now be visible on the top left of the 3D view. You can set the temperature manually and test that filament flows out of the printer by pressing "Extrude 10" button.
-
-You can start printing by hitting Print. In this mode printing time only shown on your computer, and it seems like your computer needs to be connected to the printer until the print is complete. Don't crash your Cura during this time. :)
-
-## Printing with OctoPi
-
-In Futurice-Tampere network (or VPN) go to http://tre-octoprint.futurice.com/, and enter the credentials that can be found from password safe(search "Tampere Taz 6 OctoPrint"). Make sure the printer is turned on and hit "Connect" from the Connection menu.
-
-Upload your files (already sliced .gcode files or .stl files that will be sliced on the device) and start printing.
-
-Camera & DNS setup coming soon™
+18. After the print is done, the part will first be cooled down. After the desired cooling temperature is reached (45 C° for PLA), the printer will move back to neutral position and the part can be removed. The knife with blue handle and mild violence can be used to separate the piece from heat bed.
 
 ## Debugging
 
